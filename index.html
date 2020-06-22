@@ -1,0 +1,159 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="resources/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="resources/slide.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="resources/demo_style.css">
+<link rel="stylesheet" href="resources/modal.css">
+
+</head>
+<body>
+<h1 align="center">CoronaVirus Info</h1>
+<h2 align="center">#StayHome#StaySafe</h2>
+<div id="circularMenu1" class="circular-menu">
+
+  <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
+    <i class="fa fa-bars"></i>
+  </a>
+
+  <menu class="items-wrapper">
+    <a href="resources/about.html" class="menu-item fa fa-user" title="About"></a>
+    <a href="https://www.covidvisualizer.com/" class="menu-item fa fa-globe" title="Global Cases"></a>
+    <a href="https://en.wikipedia.org/wiki/Coronavirus" class="menu-item fa fa-certificate" title="Overview"></a>
+    <a href="#" class="menu-item fa fa-home" title="Home"></a>
+  </menu>
+</div>
+
+
+<div class="swiper-container">
+<div class="swiper-wrapper">
+
+<div class="swiper-slide">
+<div class="container">
+<img src="resources/images/symptoms.jpg" class="image">
+<div class="overlay"><a href="#" class="myBtn"><div class="text">Symptoms</div></a>
+</div>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="container">
+<img src="resources/images/prevention.jpg" class="image">
+<div class="overlay"><a href="#" class="myBtn"><div class="text">Prevention</div></a>
+</div>
+</div>
+</div>
+
+<div class="swiper-slide">
+<div class="container">
+<img src="resources/images/treatments.jpg" class="image">
+<div class="overlay"><a href="#" class="myBtn"><div class="text">Treatments</div></a>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="swiper-pagination"></div>
+</div>
+
+<div id="myModal1" class="modal">
+
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2 align="center">Symptoms</h2>
+    </div>
+    <div class="modal-body">
+      <p>COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization.</p>
+<p>Most common symptoms:
+<ul><li>fever</li>
+<li>dry cough</li>
+<li>tiredness </li></ul></p>
+<p>Less common symptoms:
+<ul><li>ache, headache and pains</li>
+<li>sore throat, loss of taste or smell</li>
+<li>diarrhoea, conjunctivitis</li>
+<li>a rash on skin, or discolouration of fingers or toes</li></ul></p>
+<p>Serious symptoms:
+<ul><li>difficulty breathing or shortness of breath</li>
+<li>chest pain or pressure</li>
+<li>loss of speech or movement</li></ul>
+Seek immediate medical attention if you have serious symptoms. Always call before visiting your doctor or health facility.People with mild symptoms who are otherwise healthy should manage their symptoms at home. On average it takes 5–6 days from when someone is infected with the virus for symptoms to show, however it can take up to 14 days.</p>
+    </div>
+  </div>
+  
+</div>
+
+<div id="myModal2" class="modal">
+
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2 align="center">Prevention</h2>
+    </div>
+    <div class="modal-body">
+      <p>Protect yourself and others around you by knowing the facts and taking appropriate precautions. Follow advice provided by your local public health agency.</p>
+      <p>To prevent the spread of COVID-19:
+<ul><li>Clean your hands often. Use soap and water, or an alcohol-based hand rub.</li>
+<li>Maintain a safe distance from anyone who is coughing or sneezing.</li>
+<li>Don’t touch your eyes, nose or mouth.</li>
+<li>Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.</li>
+<li>Stay home if you feel unwell.</li>
+<li>If you have a fever, cough and difficulty breathing, seek medical attention. Call in advance.</li>
+<li>Follow the directions of your local health authority.</li></ul>
+Avoiding unneeded visits to medical facilities allows healthcare systems to operate more effectively, therefore protecting you and others.</p>
+    </div>
+  </div>
+
+</div>
+
+<div id="myModal3" class="modal">
+
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <h2 align="center">Treatments</h2>
+    </div>
+    <div class="modal-body">
+      <p>To date, there are no specific vaccines or medicines for COVID-19.Treatments are under investigation, and will be tested through clinical trials.</p>
+      <p>Self-Care<br><br>
+If you feel sick you should rest, drink plenty of fluid, and eat nutritious food. Stay in a separate room from other family members, and use a dedicated bathroom if possible. Clean and disinfect frequently touched surfaces.
+<br><br>
+Everyone should keep a healthy lifestyle at home. Maintain a healthy diet, sleep, stay active, and make social contact with loved ones through the phone or internet. Children need extra love and attention from adults during difficult times. Keep to regular routines and schedules as much as possible.
+<br><br>
+It is normal to feel sad, stressed, or confused during a crisis. Talking to people you trust, such as friends and family, can help. If you feel overwhelmed, talk to a health worker or counsellor.<br><br>
+Medical Treatments<br><br>
+If you have mild symptoms and are otherwise healthy, self-isolate and contact your medical provider or a COVID-19 information line for advice.
+Seek medical care if you have a fever, a cough, and difficulty breathing. Call in advance.</p>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<script type="text/javascript" src="resources/modal.js"></script>
+<script type="text/javascript" src="resources/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+ </script>
+</body>
+</html>
