@@ -1,0 +1,70 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="demo_style.css">
+<style>
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+
+button:hover, .soc:hover {
+  opacity: 0.7;
+}
+</style>
+</head>
+<body>
+
+
+<div id="circularMenu1" class="circular-menu">
+
+  <a class="floating-btn" onclick="document.getElementById('circularMenu1').classList.toggle('active');">
+    <i class="fa fa-bars"></i>
+  </a>
+
+  <menu class="items-wrapper">
+    <a href="about.html" class="menu-item fa fa-user" title="About"></a>
+    <a href="https://www.covidvisualizer.com/" class="menu-item fa fa-globe" title="Global Cases"></a>
+    <a href="https://en.wikipedia.org/wiki/Coronavirus" class="menu-item fa fa-certificate" title="Overview"></a>
+    <a href="../index.html" class="menu-item fa fa-home" title="Home"></a>
+  </menu>
+</div>
+<h2 style="text-align:center">About me</h2>
+<div class="card">
+  <img src="images/profile.jpeg" style="width:100%">
+  <h1>Pravin S.M</h1>
+  <p class="title">Student,Learner & Explorer</p>
+  <p>Besides gravity,nothing keeps down!</p>
+  <div style="margin: 24px 0;"> 
+    <a class="soc" style="text-decoration: none;font-size: 22px;color: black;" href="https://www.instagram.com/pravin_pace?r=nametag"><i class="fa fa-instagram"></i></a>  
+    <a class="soc" style="text-decoration: none;font-size: 22px;color: black;" href="https://www.linkedin.com/in/pravin-sm-128610165"><i class="fa fa-linkedin"></i></a>  
+    <a class="soc" style="text-decoration: none;font-size: 22px;color: black;" href="https://www.facebook.com/pravin.lodha.11"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button>Contact</button></p>
+</div>
+
+</body>
+</html>
