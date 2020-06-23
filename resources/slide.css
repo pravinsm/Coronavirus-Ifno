@@ -1,15 +1,4 @@
 @font-face { font-family: hc; src: url('font/honey-script.light.ttf'); }
-body {
-      min-height:100vh;
-position: relative;
-  background: linear-gradient(to bottom, black 0%,black 50%,#000000 50%,white 50%,white 100%);
-      font-family: sans-serif;
-      font-size: 14px;
-      color:#000;
-      margin: 0;
-      padding: 0;
-      overflow: auto;
-    }
 h1{
 color: red;
 padding-top:12px;
