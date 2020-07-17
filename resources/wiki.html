@@ -11,46 +11,85 @@ html, body {
     margin: 0;
     padding: 0;
 }
-#frameContainer {
-    position: fixed;
-    height: 100%;
-    top:0px;
-    left: 60px;
-    right:0px;
-    bottom:0px;
-    z-index:1;
-}
-#main_iframe{
-    height: 100%;
-    width: 100%;
-}
-nav {position:fixed; 
-    left:0px; 
-    top:0px; 
-    bottom:0px; 
-    width:60px; 
-    background:rgba(0,0,0,.8); 
-    color:#fff; 
-    z-index:2
-}
+@media screen and (max-width: 600px) {
+	#frameContainer {
+		position: fixed;
+    		height: 100%;
+    		top:0px;
+    		left: 40px;
+	    	right:0px;
+    		bottom:0px;
+    		z-index:1;
+	}
+	#main_iframe{
+    		height: 100%;
+    		width: 100%;
+	}
+	nav {position:fixed; 
+    		left:0px; 
+    		top:0px; 
+    		bottom:0px; 
+    		width:40px; 
+    		background:rgba(0,0,0,.8); 
+    		color:#fff; 
+    		z-index:2
+	}
 
-a{
-text-decoration: none;
-color:white;
+	a{
+		text-decoration: none;
+		color:white;
+	}
+	.fa{
+		display:block;
+		font-size: 24px;
+		padding:10px;
+		padding-top:15px;
+		margin-bottom:50px;
+	}	
 
-
+	.fa:hover{
+  		color:#ff4000;
+	}
 }
+@media screen and (min-width: 601px) {
+	#frameContainer {
+		position: fixed;
+    		height: 100%;
+    		top:0px;
+    		left: 60px;
+	    	right:0px;
+    		bottom:0px;
+    		z-index:1;
+	}
+	#main_iframe{
+    		height: 100%;
+    		width: 100%;
+	}
+	nav {position:fixed; 
+    		left:0px; 
+    		top:0px; 
+    		bottom:0px; 
+    		width:60px; 
+    		background:rgba(0,0,0,.8); 
+    		color:#fff; 
+    		z-index:2
+	}
 
-.fa{
-display:block;
-font-size: 32px;
-padding:13px;
-padding-top:15px;
-margin-bottom:50px;
-}
+	a{
+		text-decoration: none;
+		color:white;
+	}
+	.fa{
+		display:block;
+		font-size: 32px;
+		padding:13px;
+		padding-top:15px;
+		margin-bottom:50px;
+	}	
 
-.fa:hover{
-  color:#ff4000;
+	.fa:hover{
+  		color:#ff4000;
+	}
 }
 </style>
 </head>
