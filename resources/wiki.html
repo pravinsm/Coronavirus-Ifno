@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<style>
+html, body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+#frameContainer {
+    position: fixed;
+    height: 100%;
+    top:0px;
+    left: 60px;
+    right:0px;
+    bottom:0px;
+    z-index:1;
+}
+#main_iframe{
+    height: 100%;
+    width: 100%;
+}
+nav {position:fixed; 
+    left:0px; 
+    top:0px; 
+    bottom:0px; 
+    width:60px; 
+    background:#333; 
+    color:#fff; 
+    z-index:2
+}
+
+a{
+text-decoration: none;
+color:white;
+
+
+}
+
+.fa{
+display:block;
+font-size: 32px;
+padding:13px;
+padding-top:15px;
+margin-bottom:50px;
+}
+
+.fa:hover{
+  color:#ff4000;
+}
+</style>
+</head>
+<body>
+<nav>
+    
+        <a href="../index.html" class="menu-item fa fa-home" title="Home"></a>
+        <a href="#" class="menu-item fa fa-certificate" title="Overview"></a>
+	<a href="https://www.covidvisualizer.com/" class="menu-item fa fa-globe" title="Global Cases"></a>
+        <a href="about.html" class="menu-item fa fa-user" title="About"></a>
+    
+</nav>
+     
+<div id="frameContainer">
+  <iframe src="https://en.wikipedia.org/wiki/Coronavirus" frameborder="0" name="product_iframe" id="main_iframe"></iframe>
+</div>
+	
+</body>
+</html>
+
